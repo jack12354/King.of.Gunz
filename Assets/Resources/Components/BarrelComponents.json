@@ -1,0 +1,46 @@
+{
+  "ComponentType": "Barrel",
+  "Mod" : false,
+  "Components": [
+    {
+      "ID": 1,
+      "Name": "Light Pistol Barrel",
+      "BodyType": "Pistol"
+    },
+    {
+      "ID": 2,
+      "Name": "Heavy Pistol Barrel",
+      "BodyType": "Pistol"
+    },
+    {
+      "ID": 3,
+      "Name": "Light SMG Barrel",
+      "BodyType": "Short"
+    },
+    {
+      "ID": 4,
+      "Name": "Heavy SMG Barrel",
+      "BodyType": "Short"
+    },
+    {
+      "ID": 5,
+      "Name": "Light Assault Rifle Barrel",
+      "BodyType": "Medium"
+    },
+    {
+      "ID": 6,
+      "Name": "Heavy Assault Rifle Barrel",
+      "BodyType": "Medium"
+    },
+    {
+      "ID": 7,
+      "Name": "Light Sniper Rifle Barrel",
+      "BodyType": "Long"
+    },
+    {
+      "ID": 8,
+      "Name": "Heavy Sniper Rifle Barrel",
+      "BodyType": "Long"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "ComponentType": "Body",
+  "Mod" : true,
+  "Components": [
+    {
+      "ID": 1,
+      "Name": "Tactical Light",
+      "BodyType": "All"
+    },
+    {
+      "ID": 2,
+      "Name": "Pistol Laser",
+      "BodyType": "Pistol"
+    },
+    {
+      "ID": 3,
+      "Name": "SMG Laser",
+      "BodyType": "Short"
+    },
+    {
+      "ID": 4,
+      "Name": "Assault Rifle Laser",
+      "BodyType": "Medium"
+    },
+    {
+      "ID": 5,
+      "Name": "Sniper Rifle Laser",
+      "BodyType": "Medium"
+    }
+  ]
+}

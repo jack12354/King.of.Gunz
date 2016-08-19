@@ -1,0 +1,46 @@
+{
+  "ComponentType": "Scope",
+  "Mod" : true,
+  "Components": [
+    {
+      "ID": 1,
+      "Name": "Light Pistol",
+      "BodyType": "Pistol"
+    },
+    {
+      "ID": 2,
+      "Name": "Heavy Pistol",
+      "BodyType": "Pistol"
+    },
+    {
+      "ID": 3,
+      "Name": "Light SMG",
+      "BodyType": "Short"
+    },
+    {
+      "ID": 4,
+      "Name": "Heavy SMG",
+      "BodyType": "Short"
+    },
+    {
+      "ID": 5,
+      "Name": "Light Assault Rifle",
+      "BodyType": "Medium"
+    },
+    {
+      "ID": 6,
+      "Name": "Heavy Assault Rifle",
+      "BodyType": "Medium"
+    },
+    {
+      "ID": 7,
+      "Name": "Light Sniper Rifle",
+      "BodyType": "Long"
+    },
+    {
+      "ID": 8,
+      "Name": "Heavy Sniper Rifle",
+      "BodyType": "Long"
+    }
+  ]
+}
