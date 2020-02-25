@@ -38,18 +38,18 @@ public class UIManager : MonoBehaviour
         GripModsDropdown.onValueChanged.AddListener(index => g.SetComponent(((OptionDataExt) GripModsDropdown.options[index]).ComponentID));
         ScopeModsDropdown.onValueChanged.AddListener(index => g.SetComponent(((OptionDataExt) ScopeModsDropdown.options[index]).ComponentID));
 
-        ComponentStore.BodyComponents.ForEach(wc => BodyDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.FiringComponents.ForEach(wc => FiringDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.BarrelComponents.ForEach(wc => BarrelDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.StockComponents.ForEach(wc => StockDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.GripComponents.ForEach(wc => GripDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.ScopeComponents.ForEach(wc => ScopeDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.BodyMods.ForEach(wc => BodyModsDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.FiringMods.ForEach(wc => FiringModsDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.BarrelMods.ForEach(wc => BarrelModsDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.StockMods.ForEach(wc => StockModsDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.GripMods.ForEach(wc => GripModsDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
-        ComponentStore.ScopeMods.ForEach(wc => ScopeModsDropdown.options.Add(new OptionDataExt { text = wc.Name, image = null, ComponentID = wc.ID }));
+        ComponentStore.BodyComponents.ForEach(wc => BodyDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.FiringComponents.ForEach(wc => FiringDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.BarrelComponents.ForEach(wc => BarrelDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.StockComponents.ForEach(wc => StockDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.GripComponents.ForEach(wc => GripDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.ScopeComponents.ForEach(wc => ScopeDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.BodyMods.ForEach(wc => BodyModsDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.FiringMods.ForEach(wc => FiringModsDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.BarrelMods.ForEach(wc => BarrelModsDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.StockMods.ForEach(wc => StockModsDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.GripMods.ForEach(wc => GripModsDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
+        ComponentStore.ScopeMods.ForEach(wc => ScopeModsDropdown.options.Add(new OptionDataExt { text = wc.FullName, image = null, ComponentID = wc.ID }));
     }
 
     // Update is called once per frame

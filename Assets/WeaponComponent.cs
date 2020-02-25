@@ -12,7 +12,7 @@ public partial class WeaponComponent
     public GameObject Model;            // A prefab representing the model of the Component
     public string Name;                 // The Pretty Name of the Component
     public string FullName              // The pretty name of the component with quality
-    { get { return Quality  + Name; } } 
+    { get { return Quality + " " + Name; } } 
     public bool Mod;                    // Is this a weapon mod
     public Quality Quality;             // Component Quality
 

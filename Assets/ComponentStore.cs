@@ -3,7 +3,6 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using SimpleJson;
 using SimpleJSON;
 
 public static class ComponentStore
@@ -31,7 +30,7 @@ public static class ComponentStore
 
     private static void Parse(TextAsset inFile)
     {
-       // Debug.Log("Parsing " + inFile.name);
+        // Debug.Log("Parsing " + inFile.name);
         var json = JSON.Parse(inFile.text);
         ComponentType type = (ComponentType)Enum.Parse(typeof(ComponentType), json["ComponentType"].Value);
         bool isMod = json["Mod"].AsBool;
@@ -56,14 +55,14 @@ public static class ComponentStore
             component.ID += (1000 * (int)type) + (500 * (isMod ? 1 : 0));
             Debug.Log("Adding " + type + " " + component.ID + ": " + component.Name);
 
-            for (int lvl = 0; lvl < (int)Quality.Count; lvl++)
-            {
-                component.Quality = (Quality) lvl;
+       //     for (int lvl = 0; lvl < (int)Quality.Count; lvl++)
+       //     {
+       //         component.Quality = (Quality)lvl;
                 AllWeaponComponents.Add((WeaponComponent)component.Clone());
-                component.ID += 0.1;
-            }
+       //         component.ID += 0.1;
+       //     }
         }
-//        AllWeaponComponents.AddRange(components);
+        //        AllWeaponComponents.AddRange(components);
     }
 
     public static bool init = true; // Well, it is now that you've come and looked at it
